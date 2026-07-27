@@ -92,7 +92,12 @@ def validate(include_history: bool) -> list[str]:
                 errors.append("Git history contains non-allowed author or committer metadata")
                 break
         tags = subprocess.run(
-            ["git", "for-each-ref", "--format=%(taggername)%x00%(taggeremail)", "refs/tags"],
+            [
+                "git",
+                "for-each-ref",
+                "--format=%(taggername)%00%(taggeremail:trim)",
+                "refs/tags",
+            ],
             cwd=ROOT,
             capture_output=True,
             check=True,
