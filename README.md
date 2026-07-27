@@ -4,7 +4,7 @@
 [![Licence : CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-green.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Qualite](https://github.com/Nesus0/Droit_Francais_Skill/actions/workflows/quality.yml/badge.svg)](https://github.com/Nesus0/Droit_Francais_Skill/actions/workflows/quality.yml)
 
-Version 4.1.6 d'une methodologie portable pour une assistance prudente en
+Version 4.1.7 d'une methodologie portable pour une assistance prudente en
 information et recherche juridiques en droit francais.
 
 Ce projet fournit un noyau independant des fournisseurs, des correspondances

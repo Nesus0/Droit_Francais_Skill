@@ -1,6 +1,6 @@
 # Journal des modifications
 
-## [4.1.6] - 2026-07-27
+## [4.1.7] - 2026-07-27
 
 ### Préparation open source
 

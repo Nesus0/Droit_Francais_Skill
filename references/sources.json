@@ -1,5 +1,5 @@
 {
-  "registry_version": "4.1.6",
+  "registry_version": "4.1.7",
   "sources": [
     {"id":"legifrance","authority_level":"primary_official","domains":["legislation","regulations","case-law"],"nature_normative":"binding_texts_and_official_publications","opposability":"depends_on_document_and_effective_date","access_mode":"public_web","citation_template":"{title_or_code}, {article_or_identifier}, Legifrance, {url}","refresh_policy":"check_on_use","privacy_level":"public","tool_adapter":"web_search_or_direct_url","fallback_strategy":"state_unverified_and_provide_official_search_terms","url":"https://www.legifrance.gouv.fr"},
     {"id":"jorf","authority_level":"primary_official","domains":["official-publications","legislation","regulations"],"nature_normative":"official_publication","opposability":"depends_on_publication_and_effective_date","access_mode":"public_web","citation_template":"JORF, {date}, {text_identifier}, {url}","refresh_policy":"check_on_use","privacy_level":"public","tool_adapter":"web_search_or_direct_url","fallback_strategy":"use_legifrance_journal_officiel_route_and_state_unverified","url":"https://www.legifrance.gouv.fr/jorf/jo"},

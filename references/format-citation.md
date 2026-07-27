@@ -1,6 +1,6 @@
 # REFERENCE — Format de Citation
 
-**Version** : 4.1.6 | **Objectif** : Normaliser les citations juridiques
+**Version** : 4.1.7 | **Objectif** : Normaliser les citations juridiques
 
 ---
 
@@ -325,4 +325,4 @@ Cass. Soc., 11 mai 2010, n° 09-42.241 (Legifrance : LEGIARTI...)
 
 ---
 
-*Cette référence fait partie du skill Droit Francais Skill v4.1.6*
+*Cette référence fait partie du skill Droit Francais Skill v4.1.7*
