@@ -15,7 +15,7 @@ objet GitHub en attente de purge.
 | Liens Markdown relatifs | PASS | controle local de l'audit |
 | Archive de baseline | PASS | archive publiée `v4.1.5` inspectée avant assainissement |
 | Reproductibilité byte-à-byte de l'archive | PASS | `create_archive.py --check-reproducible`, SHA-256 identique deux fois |
-| Release GitHub finale | À VÉRIFIER | publier `v4.1.7` depuis l'historique assaini, puis comparer son SHA-256 |
+| Release GitHub finale | À VÉRIFIER | publier `v4.1.8` depuis l'historique assaini, puis comparer son SHA-256 |
 | Licence detectee | PASS | GitHub `cc-by-sa-4.0` |
 | Harness LLM | PASS structurel | dry-run des 28 cas; aucun appel fournisseur |
 | Tests comportementaux executes | NON VERIFIE | aucune réponse LLM réelle |

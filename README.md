@@ -4,7 +4,7 @@
 [![Licence : CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-green.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Qualite](https://github.com/Nesus0/Droit_Francais_Skill/actions/workflows/quality.yml/badge.svg)](https://github.com/Nesus0/Droit_Francais_Skill/actions/workflows/quality.yml)
 
-Version 4.1.7 d'une methodologie portable pour une assistance prudente en
+Version 4.1.8 d'une methodologie portable pour une assistance prudente en
 information et recherche juridiques en droit francais.
 
 Ce projet fournit un noyau independant des fournisseurs, des correspondances
@@ -28,6 +28,10 @@ Le `SKILL.md` racine est une enveloppe portable courte autour du noyau canonique
 Il ne remplace ni ne duplique la methodologie.
 
 ## Correspondances d'installation
+
+Pour un chargeur de skills ZIP, utiliser l'archive attachee a une release GitHub
+plutot que `Code` > `Download ZIP`: l'archive de release place `SKILL.md` a la
+racine.
 
 | Cible | Correspondance reelle |
 | --- | --- |

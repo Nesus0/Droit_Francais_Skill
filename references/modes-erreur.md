@@ -1,6 +1,6 @@
 # REFERENCE — 14 Modes d'Erreur LLM en Recherche Juridique
 
-**Version** : 4.1.7 | **Objectif** : Checklist anti-hallucination
+**Version** : 4.1.8 | **Objectif** : Checklist anti-hallucination
 
 ---
 
@@ -319,4 +319,4 @@ Avant chaque réponse juridique, vérifiez :
 
 ---
 
-*Cette référence fait partie du skill Droit Francais Skill v4.1.7*
+*Cette référence fait partie du skill Droit Francais Skill v4.1.8*

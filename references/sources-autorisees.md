@@ -1,6 +1,6 @@
 # REFERENCE — Sources Autorisées et Hiérarchie des Normes
 
-**Version** : 4.1.7 | **Objectif** : Guide des sources juridiques françaises
+**Version** : 4.1.8 | **Objectif** : Guide des sources juridiques françaises
 
 ---
 
@@ -285,4 +285,4 @@ POUR UN TEXT EUROPÉEN :
 
 ---
 
-*Cette référence fait partie du skill Droit Francais Skill v4.1.7*
+*Cette référence fait partie du skill Droit Francais Skill v4.1.8*

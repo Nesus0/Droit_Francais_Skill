@@ -32,6 +32,28 @@ REQUIRED_FILES = {
 }
 
 
+def validate_skill_frontmatter(errors: list[str]) -> None:
+    skill = ROOT / "SKILL.md"
+    try:
+        lines = skill.read_text(encoding="utf-8").splitlines()
+    except OSError as exc:
+        errors.append(f"cannot read SKILL.md: {exc}")
+        return
+    if not lines or lines[0] != "---":
+        errors.append("SKILL.md must start with YAML frontmatter")
+        return
+    try:
+        end = lines.index("---", 1)
+    except ValueError:
+        errors.append("SKILL.md frontmatter is not terminated")
+        return
+    metadata = lines[1:end]
+    if not any(line.startswith("name:") and line.split(":", 1)[1].strip() for line in metadata):
+        errors.append("SKILL.md frontmatter must define name")
+    if not any(line.startswith("description:") and line.split(":", 1)[1].strip() for line in metadata):
+        errors.append("SKILL.md frontmatter must define description")
+
+
 def tracked_files() -> list[Path]:
     result = subprocess.run(
         ["git", "ls-files", "-z"], cwd=ROOT, capture_output=True, check=True
@@ -50,6 +72,7 @@ def validate_links(path: Path, text: str, errors: list[str]) -> None:
 
 def validate(include_history: bool) -> list[str]:
     errors: list[str] = []
+    validate_skill_frontmatter(errors)
     for required in REQUIRED_FILES:
         if not (ROOT / required).is_file():
             errors.append(f"missing public governance file: {required}")

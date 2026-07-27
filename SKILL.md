@@ -1,3 +1,8 @@
+---
+name: droit-francais-skill
+description: Methodologie prudente pour l'information et la recherche juridiques en droit francais, avec verification des sources, des dates et des citations.
+---
+
 # Droit Francais Skill
 
 Ce fichier est une enveloppe portable. La methodologie independante des

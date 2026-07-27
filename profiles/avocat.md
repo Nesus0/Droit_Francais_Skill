@@ -1,6 +1,6 @@
 # PROFIL — Avocat (Conseil et Contentieux)
 
-**Version** : 4.1.7 | **Compatible** : Tous modèles d'IA
+**Version** : 4.1.8 | **Compatible** : Tous modèles d'IA
 
 ---
 

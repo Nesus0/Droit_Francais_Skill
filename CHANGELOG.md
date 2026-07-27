@@ -1,5 +1,14 @@
 # Journal des modifications
 
+## [4.1.8] - 2026-07-27
+
+### Compatibilite
+
+- Ajout du frontmatter YAML obligatoire (`name`, `description`) a `SKILL.md`
+  pour les chargeurs de skills, notamment Perplexity.
+- Documentation du televersement de l'archive de release, qui place `SKILL.md`
+  a la racine du ZIP.
+
 ## [4.1.7] - 2026-07-27
 
 ### Préparation open source
