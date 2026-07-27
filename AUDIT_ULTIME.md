@@ -3,8 +3,9 @@
 ## Cadre et verdict
 
 - Date de reference : 2026-07-27 (Europe/Paris, CEST).
-- Baseline publique auditée :
-  `b89ba5fd03da3307272007ec397aa0d399393f3d` avant assainissement.
+- Baseline publique auditée : historique antérieur à l'assainissement. Son
+  identifiant est volontairement omis pour ne pas fournir de lien vers un objet
+  GitHub non encore purgé.
 - Perimetre : depot Git, workflows, scripts, prompts, profils, domaines,
   registre des sources, evaluations et releases GitHub.
 - Verdict : **GO_WITH_RESERVATIONS** après assainissement des références

@@ -3,7 +3,9 @@
 ## Référence
 
 - Dépôt : `Droit_Francais_Skill`
-- Commit de départ audité : `c53a6cc5f64889691c5f20fb25562353469da8f3`
+- Baseline auditée : historique antérieur à l'assainissement; identifiant retiré
+  de la documentation publique afin de ne pas rendre un objet GitHub résiduel
+  directement navigable.
 - Branche : `main`
 - Date : 2026-07-27, Europe/Paris
 - Le commit final de cette extension est donné dans le compte rendu; il n'est

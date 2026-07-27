@@ -1,6 +1,6 @@
 # DOMAINE — Droit du Travail
 
-**Version** : 4.1.6 | **Domaine** : Relations individuelles et collectives de travail
+**Version** : 4.1.7 | **Domaine** : Relations individuelles et collectives de travail
 
 ---
 

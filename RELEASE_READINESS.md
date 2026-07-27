@@ -1,7 +1,8 @@
 # Release readiness
 
-Date de reference : 2026-07-27 (Europe/Paris). Commit public audite :
-`b89ba5fd03da3307272007ec397aa0d399393f3d`.
+Date de référence : 2026-07-27 (Europe/Paris). La baseline antérieure est
+volontairement non identifiée afin de ne pas rendre directement navigable un
+objet GitHub en attente de purge.
 
 ## Etat
 
@@ -14,7 +15,7 @@ Date de reference : 2026-07-27 (Europe/Paris). Commit public audite :
 | Liens Markdown relatifs | PASS | controle local de l'audit |
 | Archive de baseline | PASS | archive publiée `v4.1.5` inspectée avant assainissement |
 | Reproductibilité byte-à-byte de l'archive | PASS | `create_archive.py --check-reproducible`, SHA-256 identique deux fois |
-| Release GitHub finale | À VÉRIFIER | publier `v4.1.6` depuis l'historique assaini, puis comparer son SHA-256 |
+| Release GitHub finale | À VÉRIFIER | publier `v4.1.7` depuis l'historique assaini, puis comparer son SHA-256 |
 | Licence detectee | PASS | GitHub `cc-by-sa-4.0` |
 | Harness LLM | PASS structurel | dry-run des 28 cas; aucun appel fournisseur |
 | Tests comportementaux executes | NON VERIFIE | aucune réponse LLM réelle |

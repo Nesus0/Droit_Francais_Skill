@@ -1,6 +1,6 @@
 # DOMAINE — Droit Pénal
 
-**Version** : 4.1.6 | **Domaine** : Infractions, responsabilité pénale, procédure pénale
+**Version** : 4.1.7 | **Domaine** : Infractions, responsabilité pénale, procédure pénale
 
 ---
 

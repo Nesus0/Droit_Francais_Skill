@@ -1,6 +1,6 @@
 # DOMAINE — Droit des Affaires / Commercial
 
-**Version** : 4.1.6 | **Domaine** : Droit des sociétés, procédures collectives, propriété intellectuelle, concurrence
+**Version** : 4.1.7 | **Domaine** : Droit des sociétés, procédures collectives, propriété intellectuelle, concurrence
 
 ---
 
