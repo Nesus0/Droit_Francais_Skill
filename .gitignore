@@ -1,0 +1,41 @@
+# Fichiers locaux à ignorer
+*.DS_Store
+.DS_Store
+Thumbs.db
+
+# Environnement
+.env
+.env.local
+.env.*.local
+
+# Fichier de profil local (choix personnel de l'utilisateur)
+profil.md
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Archives temporaires
+*.zip
+*.tar.gz
+*.tar
+
+# Résultats locaux de campagnes LLM (jamais versionnés par défaut)
+.audit-runs/
+
+# Python (pour les scripts optionnels)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node (si outils de dev)
+node_modules/
+npm-debug.log

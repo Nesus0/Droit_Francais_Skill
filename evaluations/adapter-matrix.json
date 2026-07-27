@@ -1,0 +1,40 @@
+{
+  "version": "1",
+  "adapters": [
+    {
+      "id": "chatgpt",
+      "path": "adapters/chatgpt",
+      "required_files": ["adapters/chatgpt/README.md", "adapters/chatgpt/instructions.md"],
+      "canonical_prompt": "core/system-prompt.md",
+      "expected_status": "PRESENT_NOT_EXECUTED"
+    },
+    {
+      "id": "claude",
+      "path": "adapters/claude",
+      "required_files": ["adapters/claude/README.md"],
+      "canonical_prompt": "core/system-prompt.md",
+      "expected_status": "PRESENT_NOT_EXECUTED"
+    },
+    {
+      "id": "gemini",
+      "path": "adapters/gemini",
+      "required_files": ["adapters/gemini/README.md"],
+      "canonical_prompt": "core/system-prompt.md",
+      "expected_status": "PRESENT_NOT_EXECUTED"
+    },
+    {
+      "id": "perplexity",
+      "path": "adapters/perplexity",
+      "required_files": ["adapters/perplexity/README.md"],
+      "canonical_prompt": "core/system-prompt.md",
+      "expected_status": "PRESENT_NOT_EXECUTED"
+    },
+    {
+      "id": "generic",
+      "path": "adapters/generic",
+      "required_files": ["adapters/generic/system-prompt.md"],
+      "canonical_prompt": "core/system-prompt.md",
+      "expected_status": "PRESENT_NOT_EXECUTED"
+    }
+  ]
+}

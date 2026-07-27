@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Droit Francais Skill source registry",
+  "type": "object",
+  "required": ["registry_version", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "registry_version": {"type": "string", "minLength": 1},
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/source"}
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "authority_level", "domains", "nature_normative", "opposability", "access_mode", "citation_template", "refresh_policy", "privacy_level", "tool_adapter", "fallback_strategy", "url"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "authority_level": {"type": "string", "minLength": 1},
+        "domains": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "nature_normative": {"type": "string", "minLength": 1},
+        "opposability": {"type": "string", "minLength": 1},
+        "access_mode": {"type": "string", "minLength": 1},
+        "citation_template": {"type": "string", "minLength": 1},
+        "refresh_policy": {"type": "string", "minLength": 1},
+        "privacy_level": {"type": "string", "minLength": 1},
+        "tool_adapter": {"type": "string", "minLength": 1},
+        "fallback_strategy": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "pattern": "^https://"}
+      }
+    }
+  }
+}

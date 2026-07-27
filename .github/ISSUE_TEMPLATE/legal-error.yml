@@ -1,0 +1,36 @@
+name: Signalement juridique ou source
+description: Signaler une erreur, une source inexacte ou une limite de couverture.
+title: "[Juridique] "
+labels: ["legal-review"]
+body:
+  - type: markdown
+    attributes:
+      value: "Ne publiez ni dossier, ni identite, ni donnees personnelles ou confidentielles. Ce depot ne fournit pas de consultation juridique."
+  - type: textarea
+    id: statement
+    attributes:
+      label: Affirmation ou source concernee
+      description: Fichier, ligne, identifiant de source ou citation publique.
+    validations:
+      required: true
+  - type: input
+    id: reference-date
+    attributes:
+      label: Date de reference
+      placeholder: "YYYY-MM-DD ou inconnue"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source primaire ou officielle
+      description: URL officielle, identifiant et passage verifie; indiquer [NON VERIFIE] sinon.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Confidentialite
+      options:
+        - label: Je confirme ne pas inclure de donnees personnelles, secret professionnel ou contenu non redistribuable.
+          required: true

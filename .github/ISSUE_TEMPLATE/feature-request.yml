@@ -1,0 +1,25 @@
+name: Proposition de fonctionnalite
+description: Proposer une evolution non juridique ou une capacite de recherche.
+title: "[Proposition] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Besoin et perimetre
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Justification et risques
+      description: Inclure sources, date de reference, limites et impact sur confidentialite si pertinent.
+    validations:
+      required: true
+  - type: checkboxes
+    id: ai
+    attributes:
+      label: Verification
+      options:
+        - label: Je confirme que toute proposition generee avec une IA a ete revue par un humain.
+          required: true

@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: "3.x"
+      - name: Validate release content
+        run: |
+          python3 tools/validate_sources.py
+          python3 tools/validate_evals.py
+          python3 tools/validate_adapters.py
+          python3 tools/validate_publication.py --include-history
+          python3 -m py_compile tools/validate_sources.py tools/validate_evals.py tools/create_archive.py tools/validate_adapters.py tools/run_llm_evals.py tools/validate_publication.py
+      - name: Create ZIP archive
+        run: python3 tools/create_archive.py --output "droit-francais-skill-${GITHUB_REF_NAME}.zip"
+      - name: Verify deterministic archive
+        run: python3 tools/create_archive.py --check-reproducible
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          printf '%s\n' \
+            "## Droit Francais Skill ${GITHUB_REF_NAME}" \
+            "" \
+            "Methodologie portable, registre des sources, adaptateurs documentes," \
+            "profils et evaluations comportementales pour une assistance prudente" \
+            "en information juridique." \
+            "" \
+            "Voir https://github.com/Nesus0/Droit_Francais_Skill/blob/main/CHANGELOG.md" \
+            > release-notes.md
+          gh release create "${GITHUB_REF_NAME}" "droit-francais-skill-${GITHUB_REF_NAME}.zip" \
+            --title "Droit Francais Skill ${GITHUB_REF_NAME}" \
+            --notes-file release-notes.md
